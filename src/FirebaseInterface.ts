@@ -36,7 +36,7 @@ export class FirebaseInterface<T extends object> {
     public loginDataInstance: () => LoginData;
 
         /// Keys to load from FB
-    public keys: { key: string }[];
+    public keys: { key: string, [otherProperty: string]: any }[];
 
 	  public static classTablePath: ObjectPath;
 

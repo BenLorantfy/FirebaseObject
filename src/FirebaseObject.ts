@@ -41,7 +41,7 @@ export class FirebaseObject<T extends object = {}> implements Savable<T>, Deleta
     public static classTablePath = new ObjectPath();
 
     /// Keys to load from FB
-    public keys: { key: string }[];
+    public keys: { key: string, [otherProperty: string]: any }[];
 
     /*      [ Loadable ]       */
 
