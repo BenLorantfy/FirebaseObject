@@ -1,2 +1,2 @@
 build:
-	tsc --skipLibCheck
+	yarn build
